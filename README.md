@@ -25,7 +25,7 @@ A little Flask web app that takes house details â€” `size`, `year`, and `view` â
 
    `git clone https://github.com/TDJR007/house-price-predictor.git`
 
-   `cd House-Price-Predictor`
+   `cd house-price-predictor/`
 
 2. Set up the virtual environment
 
