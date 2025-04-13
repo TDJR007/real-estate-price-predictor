@@ -41,17 +41,15 @@ A little Flask web app that takes house details — `size`, `year`, and `view` �
     
 4. Run SVR_Real_Estate.py to generate pickle files:
 
-    `cd model`
-   
-    `python3 SVR_Real_Estate.py`
+    `cd model && python3 SVR_Real_Estate.py`
     
     or you could use the notebook in model/
 
 4. Run the app:
+   
+    `cd .. && python3 app.py`
 
-    `python3 app.py`
-
-5. Open your browser at `http://localhost:5000`
+6. Open your browser at `http://localhost:5000`
 
 
 ## 📸 Credits
