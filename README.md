@@ -1,4 +1,4 @@
-# 🏠 House Price Predictor
+# 🏠 Real Estate Price Predictor
 
 A little Flask web app that takes house details — `size`, `year`, and `view` — and uses a support vector regressor model to predict its price.
 
@@ -25,7 +25,7 @@ A little Flask web app that takes house details — `size`, `year`, and `view` �
 
    `git clone https://github.com/TDJR007/house-price-predictor.git`
 
-   `cd house-price-predictor/`
+   `cd real-estate-price-predictor/`
 
 2. Set up the virtual environment
 
