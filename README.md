@@ -29,7 +29,7 @@ A little Flask web app that takes house details â€” `size`, `year`, and `view` â
 
 2. Set up the virtual environment
 
-    `python3 -m venv venv`
+    `python3.9 -m venv venv`
     
     `source venv/bin/activate`
     
@@ -41,7 +41,8 @@ A little Flask web app that takes house details â€” `size`, `year`, and `view` â
     
 4. Run SVR_Real_Estate.py to generate pickle files:
 
-    `python3 model/SVR_Real_Estate.py`
+    `cd model`
+    `python3 SVR_Real_Estate.py`
     
     or you could use the notebook in models/
 
