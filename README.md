@@ -45,7 +45,7 @@ A little Flask web app that takes house details â€” `size`, `year`, and `view` â
    
     `python3 SVR_Real_Estate.py`
     
-    or you could use the notebook in models/
+    or you could use the notebook in model/
 
 4. Run the app:
 
