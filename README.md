@@ -29,7 +29,7 @@ A little Flask web app that takes house details â€” `size`, `year`, and `view` â
 
 2. Set up the virtual environment
 
-    `python3.9 -m venv venv` (or any python which is 3.9 or above)
+    `python3.9 -m venv venv` (Or any python which is 3.9 or above)
     
     `source venv/bin/activate`
     
