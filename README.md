@@ -47,7 +47,7 @@ A little Flask web app that takes house details â€” `size`, `year`, and `view` â
 
 4. Run the app:
 
-    `python app.py`
+    `python3 app.py`
 
 5. Open your browser at `http://localhost:5000`
 
