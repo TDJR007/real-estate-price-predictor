@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Real Estate Prices</title>
+  <!-- Real estate Price Predictor was too big for title-->
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+  <style>
+    body {
+      background-image: url('{{ url_for('static', filename='background.jpg') }}');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      background-color: lawngreen;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="lead text-center mb-4 fs-3">REAL ESTATE PRICE PREDICTOR</h1>
+
+  <div class="container col-md-8 align-items-center border border-secondary border-2">
+    <form id="predict-form">
+
+      <select name="view" class="form-select form-select-sm my-3" required>
+        <option value="Sea view">Sea view</option>
+        <option value="No sea view">No sea view</option>
+      </select>
+
+      <div class="input-group input-group-sm my-3">
+        <span class="input-group-text">House Size (square meters):</span>
+        <input type="number" name="size" class="form-control" required min="0" max="2000">
+      </div>
+
+      <div class="input-group input-group-sm my-3">
+        <span class="input-group-text">Year (2009-2024)</span>
+        <input type="number" name="year" class="form-control" required min="2009" max="2024">
+      </div>
+
+      <div class="d-grid gap-2 col-2 mx-auto my-3">
+        <button type="submit" class="btn btn-dark btn-sm">Predict Price</button>
+      </div>
+    </form>
+
+
+
+    <div id="result" class="my-3">
+      {% if prediction %}
+      <div class="alert alert-success text-center" role="alert">
+        Predicted Price: ${{ prediction }}
+      </div>
+      {% endif %}
+    </div>
+
+
+  </div>
+
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
