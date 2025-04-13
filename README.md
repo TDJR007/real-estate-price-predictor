@@ -23,7 +23,7 @@ A little Flask web app that takes house details â€” `size`, `year`, and `view` â
 
 1. Clone the repo:
 
-   `git clone https://github.com/TDJR007/house-price-predictor.git`
+   `git clone https://github.com/TDJR007/real-estate-price-predictor.git`
 
    `cd real-estate-price-predictor/`
 
