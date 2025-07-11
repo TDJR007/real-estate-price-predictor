@@ -1,7 +1,9 @@
 # 🏠 Real Estate Price Predictor
 
 A little Flask web app that takes house details — `size`, `year`, and `view` — and uses a support vector regressor model to predict its price.
+
 Now on render: https://real-estate-price-predictor-2uw1.onrender.com/
+![output](.output.png)
 
 ## 💡 Features
 
