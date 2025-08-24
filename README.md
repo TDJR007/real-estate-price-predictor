@@ -15,13 +15,14 @@ Now on render: https://real-estate-price-predictor-2uw1.onrender.com/
 
 ## ⚽️ Tech Stack
 
-- Python 3.9+
+- Python 3.11
 - Flask
-- Scikit-learn (for model)
+- Scikit-learn (for SVR model)
 - HTML/CSS/Bootstrap
 - JavaScript (basic fetch API)
 - [Pickle](https://docs.python.org/3/library/pickle.html) for model serialization
-
+- Gunicorn (for production serving)
+- uv (dependency + environment manager)
 
 ## 🏎️ Run it own your own machine
 
@@ -31,33 +32,31 @@ Now on render: https://real-estate-price-predictor-2uw1.onrender.com/
 
    `cd real-estate-price-predictor/`
 
-2. Set up the virtual environment
+2. Set up the virtual environment (using [uv](https://docs.astral.sh/uv/)):
 
-    `python3.9 -m venv venv` (Or any python which is 3.9 or above)
+    `uv venv`
+
+    `source .venv/bin/activate`  (Linux/macOS)
     
-    `source venv/bin/activate`
-    
-    `venv\scripts\activate` (For windows) 
+    `.venv\Scripts\activate`     (Windows)
     
 3. Install dependencies:
 
-    `pip install -r requirements.txt`
+    `uv sync`
     
 4. Run SVR_Real_Estate.py to generate pickle files:
 
-    `cd model && python3 SVR_Real_Estate.py`
+    `cd model && uv run SVR_Real_Estate.py`
     
     or you could use the notebook in model/
 
 4. Run the app:
    
-    `cd .. && python3 app.py`
+    `cd .. && uv run gunicorn app:app --workers=4 --threads=2 --timeout=120`
 
-6. Open your browser at `http://localhost:5000`
+6. Open your browser at ` http://127.0.0.1:8000`
 
 
 ## 📸 Credits
 
 Special thanks to *Avi Waxman*! 😊️ for giving away his beautiful picture "white-and-red houses" royalty free on unsplash. It serves as the background image for this project and we appreciate the vibes.
-
-
