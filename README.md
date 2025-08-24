@@ -52,7 +52,7 @@ Now on render: https://real-estate-price-predictor-2uw1.onrender.com/
 
 4. Run the app:
    
-    `cd .. && uv run gunicorn app:app --workers=4 --threads=2 --timeout=120 app.py`
+    `cd .. && uv run gunicorn app:app --workers=4 --threads=2 --timeout=120`
 
 6. Open your browser at ` http://127.0.0.1:8000`
 
