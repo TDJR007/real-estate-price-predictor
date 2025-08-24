@@ -35,7 +35,9 @@ Now on render: https://real-estate-price-predictor-2uw1.onrender.com/
 2. Set up the virtual environment (using [uv](https://docs.astral.sh/uv/)):
 
     `uv venv`
+
     `source .venv/bin/activate  # Linux/macOS`
+    
     `.venv\Scripts\activate     # Windows`
     
 3. Install dependencies:
