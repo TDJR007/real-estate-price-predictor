@@ -36,9 +36,9 @@ Now on render: https://real-estate-price-predictor-2uw1.onrender.com/
 
     `uv venv`
 
-    `source .venv/bin/activate  # Linux/macOS`
+    `source .venv/bin/activate`  (Linux/macOS)
     
-    `.venv\Scripts\activate     # Windows`
+    `.venv\Scripts\activate`     (Windows)
     
 3. Install dependencies:
 
